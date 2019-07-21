@@ -44,6 +44,7 @@ hr {
   font-size: 1.5em;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 }
 
 /* HEADER */
@@ -286,23 +287,30 @@ section#about {
   max-width: 750px;
 }
 
+@media (max-width: 900px) {
+  #about-description {
+    font-size: 1.1em;
+    line-height: 1.25em;
+  }
+}
+
 /* SERVICE PROVIDER SECTION */
 
-#become-provider p {
+#become-mentor p {
   color: #053f31;
   max-width: 600px;
   text-align: center;
   margin: 20px auto;
 }
 
-#become-form {
+#become-mentor-form {
   margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#become-form input {
+#become-mentor-form input {
   height: 2.5rem;
   width: 350px;
   border: 1px solid #005e48;
@@ -311,11 +319,11 @@ section#about {
   font-size: 1.1em;
 }
 
-#become-form input:focus {
+#become-mentor-form input:focus {
   outline: none;
 }
 
-#become-form button {
+#become-mentor-form button {
   background-color: #6fe8d1;
   height: 2.5rem;
   border: 1px solid #005e48;
@@ -327,16 +335,16 @@ section#about {
   font-size: 1.1em;
 }
 
-#become-form button:hover {
+#become-mentor-form button:hover {
   background-color: #40d6b5;
   transition: background-color 0.3s;
 }
 
-#become-form button:focus {
+#become-mentor-form button:focus {
   outline: none;
 }
 
-#become-form button:active {
+#become-mentor-form button:active {
   outline: none;
   background-color: #a5ffea;
   transition: 0.02s;

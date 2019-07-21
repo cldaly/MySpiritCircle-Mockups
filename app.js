@@ -15,10 +15,15 @@ app.get("/", function(req, res){
 	res.render("landing");
 });
 
-// Home page, main content
-// app.get("/home", function(req, res){
-// 	res.send("This is the home page");
-// });
+// Test Profile Page
+app.get("/test-profile", function(req, res){
+	res.render("test-profile");
+});
+
+// Color Pallet Page
+app.get("/colors", function(req, res){
+	res.render("color-pallet");
+});
 
 app.get("/*", function(req, res){
 	res.redirect("/");
