@@ -50,6 +50,11 @@ section {
   padding: 35px 80px 20px;
 }
 
+section h2 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
 .backButton a {
   color: #053f31;
   font-size: 0.9em;
@@ -63,12 +68,14 @@ section {
     padding-bottom: 10vh;
   }
   section {
+    font-size: 0.9em;
     max-width: 90%;
     padding: 35px 40px 20px;
   }
+  section h2 {
+    text-align: center;
+  }
 }
-
-
 
 
 /* HEADER */
@@ -160,7 +167,7 @@ footer a {
 
 .mentorProfile h2 {
   font-size: 2em;
-  padding-left: 10px;
+  /*padding-left: 10px;*/
   font-weight: 400;
 }
 
@@ -176,11 +183,11 @@ footer a {
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 15px;
 }
 
 .mentorAvatar {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .mentorInfo {
@@ -206,7 +213,7 @@ footer a {
     align-items: center;
   }
   .mentorProfile h2 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     padding: 0;
     text-align: center;
   }
@@ -222,11 +229,6 @@ footer a {
 
 
 /* MENTOR SERVICES */
-
-.mentorServices h2 {
-  font-size: 1.75em;
-  font-weight: 400;
-}
 
 .mentorServiceList {
   margin: 10px auto;
@@ -286,7 +288,7 @@ footer a {
   background-color: #005e48;
   border: 1px solid #005e48;
   border-radius: 4px;
-  transition: background-color, color 0.1s;
+  transition: background-color 0.2s, color 0.2s;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -294,7 +296,7 @@ footer a {
 .bookButton:hover {
   color: #000;
   background-color: #6fe8d1;
-  transition: background-color, color 0.3s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .bookButton:focus {
@@ -324,25 +326,86 @@ footer a {
 }
 
 
+/* MENTOR REVIEWS */
+
+.mentorReviews {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mentorScore i, .mentorScore span:last-child {
+  font-size: 0.9em;
+}
+
+.mentorScore, .mentorComments {
+  margin: 10px 15px;
+}
+
+.mentorComments {
+  padding: 15px;
+  border: 1px solid #005e48;
+  border-radius: 4px;
+  max-height: 32vh;
+  overflow-y: auto;
+}
+
+.mentorComments ul {
+  margin-top: 15px;
+}
+
+.mentorComments li {
+  padding: 10px;
+  border: 1px solid #005e48;
+  border-bottom: none;
+}
+
+.mentorComments li:nth-child(odd) {
+  background-color: #f5fffd;
+}
+
+.mentorComments li:last-child {
+  border-bottom: 1px solid #005e48;
+}
+
+.commenterData {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.9;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.commentButton {
+  align-self: center;
+  opacity: 1;
+  color: #fff;
+  padding: 3px 6px;
+  background-color: #005e48;
+  border: 1px solid #005e48;
+  border-radius: 3px;
+  transition: background-color 0.2s, color 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
 
+.commentButton:hover {
+  color: #000;
+  background-color: #6fe8d1;
+  transition: background-color 0.2s, color 0.2s;
+}
 
+.commentButton:focus {
+  outline: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.commentButton:active {
+  color: black;
+  outline: none;
+  background-color: #a5ffea;
+  transition: 0.02s;
+}
 
 
 
