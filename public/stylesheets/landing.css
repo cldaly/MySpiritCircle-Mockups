@@ -128,7 +128,8 @@ header nav li {
   background-repeat: no-repeat;
   opacity: 0;
   animation: fadein 1s linear forwards;
-  background-image: url(https://images.unsplash.com/photo-1560941186-6f5a4428ca49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4067&q=80);
+  /*background-image: url(https://images.unsplash.com/photo-1560941186-6f5a4428ca49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4067&q=80);*/
+  background-image: url(https://images.unsplash.com/photo-1498511225742-7831d53e64b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3456&q=80);
 }
 
 @media (max-width: 900px) {
@@ -149,13 +150,20 @@ header nav li {
 #landing-search {
   margin: 20px auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+#searchBar {
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+}
+
 #landing-search input {
   height: 2.5rem;
-  width: 350px;
+  width: 100%;
   border: 1px solid #005e48;
   padding: 0 10px;
   border-radius: 4px 0 0 4px;
@@ -166,6 +174,7 @@ header nav li {
 }
 
 #landing-search button {
+  width: 50px;
   background-color: #6fe8d1;
   height: 2.5rem;
   border: 1px solid #005e48;
@@ -190,6 +199,35 @@ header nav li {
   background-color: #a5ffea;
   transition: 0.02s;
 }
+
+
+#searchToggle {
+  user-select: none;
+  margin-top: 10px;
+  background-color: #f5fffd;
+  display: flex;
+  width: max-content;
+  border: 1px solid #005e48;
+  border-radius: 4px;
+}
+
+#searchToggle input {
+  display: none;
+}
+
+#searchToggle input + label {
+  color: #053f31;
+  opacity: 0.7;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+#searchToggle input:checked + label {
+  background-color: #6fe8d1;
+  opacity: 1;
+}
+
 
 
 /* POPULAR SERVICES */

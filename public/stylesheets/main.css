@@ -329,6 +329,7 @@ footer a {
 /* MENTOR REVIEWS */
 
 .mentorReviews {
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

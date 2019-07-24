@@ -24,8 +24,16 @@
         <h1 id="landing-title">My Spirit Circle</h1>
         <p>Connect with a spiritual guide near you</p>
         <form id="landing-search">
-            <input type="text" name="search" autocomplete="off" placeholder="Search our services...">
-            <button type="submit"><i class="fas fa-search"></i></button>
+            <div id="searchBar">
+                <input type="text" name="search" autocomplete="off" placeholder="Search our services...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div id="searchToggle">
+                <input type="radio" name="onlineOrLocal" id="searchOnline" value="online" checked>
+                <label for="searchOnline">Online</label>
+                <input type="radio" name="onlineOrLocal" id="searchlocal" value="local">
+                <label for="searchlocal">Local</label>
+            </div>
         </form>
     </div>
 </section>
