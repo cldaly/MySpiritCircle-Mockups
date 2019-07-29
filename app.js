@@ -20,6 +20,11 @@ app.get("/mentors/soarwithbarbie", function(req, res){
 	res.render("test-profile");
 });
 
+// SERVICES PATH
+app.get("/services", function(req, res){
+	res.render("services");
+});
+
 // Color Pallet Page
 app.get("/colors", function(req, res){
 	res.render("color-pallet");
