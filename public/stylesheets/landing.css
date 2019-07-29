@@ -129,7 +129,7 @@ header nav li {
   opacity: 0;
   animation: fadein 1s linear forwards;
   /*background-image: url(https://images.unsplash.com/photo-1560941186-6f5a4428ca49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4067&q=80);*/
-  background-image: url(https://images.unsplash.com/photo-1498511225742-7831d53e64b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3456&q=80);
+  background-image: url("../images/landing-background.jpeg");
 }
 
 @media (max-width: 900px) {

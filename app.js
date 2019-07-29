@@ -16,7 +16,7 @@ app.get("/", function(req, res){
 });
 
 // Test Profile Page
-app.get("/test-profile", function(req, res){
+app.get("/mentors/soarwithbarbie", function(req, res){
 	res.render("test-profile");
 });
 
