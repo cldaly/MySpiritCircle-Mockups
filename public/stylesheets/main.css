@@ -55,14 +55,6 @@ section h2 {
   font-weight: 400;
 }
 
-.backButton a {
-  color: #053f31;
-  font-size: 0.9em;
-  position: relative;
-  z-index: 2;
-  padding: 5px;
-}
-
 @media (max-width: 900px) {
   body {
     padding-bottom: 10vh;
@@ -272,8 +264,6 @@ footer a {
   width: 180px;
   height: 100%;
   margin-right: 10px;
-  opacity: 1;
-  transition: opacity 0.3s;
 }
 
 .mentorServiceItem:hover {
@@ -466,16 +456,155 @@ footer a {
 }
 
 
+/* SERVICES SECTION */
 
 
+div.services {
+  margin: 12vh auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.serviceRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.serviceCard {
+  background-color: #fff;
+  font-size: 0.9em;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #005e48;
+  border-radius: 4px;
+  margin: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.serviceCard img {
+  width: 200px;
+  height: auto;
+}
+
+img.serviceImg {
+  width: 200px;
+  height: auto;
+  border: 1px solid #cbf2ea;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.cardRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.cardRow:first-child {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.serviceDetails {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.serviceTitle {
+  font-weight: 400;
+  font-size: 1.5em;
+  padding-bottom: 15px;
+}
+
+.servicePrices {
+  padding-bottom: 10px;
+}
+
+img.mentorThumbnail {
+  border-radius: 50%;
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.serviceMentor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a.mentorName {
+  opacity: 1;
+}
+
+a.mentorName:hover {
+  text-decoration: underline;
+}
+
+.cardRow span {
+  font-size: 0.9em;
+}
+
+.moreInfoBtn {
+  opacity: 0.9;
+  color: #fff;
+  padding: 4px 10px;
+  background-color: #005e48;
+  border: 1px solid #005e48;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
 
+.moreInfoBtn:hover {
+  color: #000;
+  background-color: #6fe8d1;
+  transition: background-color 0.2s, color 0.2s;
+}
 
+.moreInfoBtn:focus {
+  outline: none;
+}
 
+.moreInfoBtn:active {
+  color: black;
+  outline: none;
+  background-color: #a5ffea;
+  transition: 0.02s;
+}
 
+/* SERVICE SIDEBAR */
 
-
-
+.serviceSidebar {
+  background-color: #fff;
+  width: 100%;
+  max-width: 300px;
+  height: 600px;
+  border: 1px solid #005e48;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+}
 
 
 

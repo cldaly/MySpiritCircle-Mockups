@@ -17,13 +17,20 @@ app.get("/", function(req, res){
 
 // Test Profile Page
 app.get("/mentors/soarwithbarbie", function(req, res){
-	res.render("test-profile");
+	var username = "soarwithbarbie";
+	res.render("test-profile", {titleAddon: username});
 });
 
 // SERVICES PATH
 app.get("/services", function(req, res){
-	res.render("services");
+	res.render("services", {titleAddon: "Services"});
 });
+
+
+
+
+
+// EXTRA STUFF
 
 // Color Pallet Page
 app.get("/colors", function(req, res){
@@ -33,7 +40,6 @@ app.get("/colors", function(req, res){
 app.get("/*", function(req, res){
 	res.redirect("/");
 });
-
 
 app.listen(3000, function(){
 	console.log("Server running, port 3000");
