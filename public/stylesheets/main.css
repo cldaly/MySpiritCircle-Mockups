@@ -383,7 +383,7 @@ footer a {
 }
 
 .mentorScore i {
-  color: #ffbf00;
+  color: #f5a700;
 }
 
 .mentorScore, .mentorComments {
@@ -481,7 +481,7 @@ div.services {
 .serviceCard {
   background-color: #fff;
   font-size: 0.9em;
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -520,6 +520,10 @@ img.serviceImg {
   justify-content: flex-start;
 }
 
+.cardRow:last-child {
+  align-items: flex-end;
+}
+
 .serviceDetails {
   display: flex;
   flex-direction: column;
@@ -531,7 +535,7 @@ img.serviceImg {
 
 .serviceTitle {
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.6em;
   padding-bottom: 15px;
 }
 
@@ -550,6 +554,12 @@ img.mentorThumbnail {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-bottom: 10px;
+}
+
+.serviceRating {
+  color: #f5a700;
+  cursor: default;
 }
 
 a.mentorName {
@@ -598,11 +608,11 @@ a.mentorName:hover {
 .serviceSidebar {
   background-color: #fff;
   width: 100%;
-  max-width: 300px;
-  height: 600px;
+  max-width: 250px;
+  /*min-height: 600px;*/
   border: 1px solid #005e48;
   border-radius: 4px;
-  padding: 10px;
+  padding: 15px;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -610,9 +620,16 @@ a.mentorName:hover {
   align-items: flex-start;
 }
 
+.serviceSidebar ul {
+  font-size: 0.9em;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
 
-
-
+.serviceSidebar i {
+  color: #f5a700;
+  font-size: 0.9em;
+}
 
 
 
