@@ -1,0 +1,43 @@
+<% include ../views/partials/header.ejs %>
+
+
+<div class="serviceCard bookServiceCard">
+	<div class="cardRow">
+		<img class="serviceImg" src="../images/service-img-01.png">
+		<div class="serviceDetails">
+			<div class="serviceTitle">
+				<h3>Thetahealing</h3>
+				<i class="far fa-heart favoriteService"></i>
+				<i class="fas fa-heart favoriteServiceActive" style="display: none;"></i>
+			</div>
+        	<div class="serviceRating">
+        		<i class="fas fa-star"></i>
+		        <i class="fas fa-star"></i>
+		        <i class="fas fa-star"></i>
+		        <i class="fas fa-star-half-alt"></i>
+		        <i class="far fa-star"></i>
+        	</div>
+	        <p class="serviceLocation"><strong>Location:</strong> Online</p>
+        	<p class="bookServiceDuration"><strong>Duration:</strong> 60 minutes</p>
+        	<div class="serviceMentor">
+        		<img class="mentorThumbnail" src="../images/barbie-01.png">
+        		<a href="/soarwithbarbie"class="mentorName">soarwithbarbie</a>
+        	</div>
+		</div>
+	</div>
+	<div class="cardRow">
+		<h4>Description:</h4>
+	</div>
+	<div class="cardRow">
+		<p class="serviceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	<hr>
+	<form action="/soarwithbarbie/test-service" method="POST" class="bookServiceForm">
+		<h4>Please select from the following booking options:</h4>
+	    <button class="bookButton" href="#">Continue to Checkout</button>
+	</form>
+    
+</div>
+
+<script type="text/javascript" src="../serviceScripts.js"></script>
+<% include ../views/partials/footer.ejs %>

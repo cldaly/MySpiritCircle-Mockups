@@ -8,6 +8,8 @@ var port = process.env.PORT || 8080;
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
+
+
 // ROUTES
 
 // Landing page
@@ -15,7 +17,7 @@ app.get("/", function(req, res){
 	res.render("landing");
 });
 
-// Test Profile Page
+// Test Profile Page - Mentor Page
 app.get("/soarwithbarbie", function(req, res){
 	var username = "soarwithbarbie";
 	res.render("test-profile", {titleAddon: username});
@@ -26,6 +28,10 @@ app.get("/services", function(req, res){
 	res.render("services", {titleAddon: "Services"});
 });
 
+// SERVICE BOOK PATH
+app.get("/soarwithbarbie/test-service", function(req, res){
+	res.render("test-service", {titleAddon: "Test Service"})
+});
 
 
 
