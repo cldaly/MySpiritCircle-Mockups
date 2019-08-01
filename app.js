@@ -16,7 +16,7 @@ app.get("/", function(req, res){
 });
 
 // Test Profile Page
-app.get("/mentors/soarwithbarbie", function(req, res){
+app.get("/soarwithbarbie", function(req, res){
 	var username = "soarwithbarbie";
 	res.render("test-profile", {titleAddon: username});
 });

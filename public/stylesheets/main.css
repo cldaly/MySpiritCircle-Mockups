@@ -273,7 +273,7 @@ footer a {
   transition: 0.3s;
 }
 
-.serviceDetails {
+.mentorServiceDetails {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -460,9 +460,11 @@ footer a {
 
 
 div.services {
+  padding: 0 20px;
   margin: 12vh auto 0;
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: center;
   align-items: flex-start;
 }
@@ -475,7 +477,12 @@ div.services {
 
 .serviceRow {
   display: flex;
-  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .serviceRow {
+    flex-direction: column;
+  }
 }
 
 .serviceCard {
@@ -509,8 +516,8 @@ img.serviceImg {
 .cardRow {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   padding: 5px;
 }
@@ -522,6 +529,8 @@ img.serviceImg {
 
 .cardRow:last-child {
   align-items: flex-end;
+
+  justify-content: space-between;
 }
 
 .serviceDetails {
@@ -531,12 +540,33 @@ img.serviceImg {
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
+  width: 100%;
 }
 
 .serviceTitle {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.serviceTitle h3 {
   font-weight: 400;
   font-size: 1.6em;
-  padding-bottom: 15px;
+}
+
+.favoriteService {
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #ff4d4d;
+}
+
+.favoriteServiceActive {
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #ff4d4d;
 }
 
 .servicePrices {
@@ -585,7 +615,6 @@ a.mentorName:hover {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-
 .moreInfoBtn:hover {
   color: #000;
   background-color: #6fe8d1;
@@ -608,7 +637,7 @@ a.mentorName:hover {
 .serviceSidebar {
   background-color: #fff;
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   /*min-height: 600px;*/
   border: 1px solid #005e48;
   border-radius: 4px;
@@ -618,12 +647,14 @@ a.mentorName:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .serviceSidebar ul {
+  padding: 5px 0 0 10px;
   font-size: 0.9em;
-  padding-left: 10px;
   margin-bottom: 20px;
+  line-height: 1.5em;
 }
 
 .serviceSidebar i {
