@@ -1,3 +1,3 @@
-# my-spirit-circle
+# MySpiritCircle Mockups
 
-Creating a one-stop-shop type marketplace to help connect spiritual healers with clients
+The existing code here will be used ad mockups for the new Angular2+/Java project
